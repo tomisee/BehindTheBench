@@ -7,19 +7,36 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
+    <header class="site-hero">
+      <span class="hero-badge">PhD field notes</span>
       <h1>Behind the Bench</h1>
-      <p>Infrequent notes from my PhD journey.</p>
+      <p class="hero-lede">
+        Slow, thoughtful reflections captured whenever the experiments, papers, or people leave a
+        lasting impression.
+      </p>
+      <div class="hero-actions">
+        <a class="button-ghost" href="entries/entry-template.html">Start a fresh entry</a>
+        <span class="hero-meta">Last updated Oct 1, 2023</span>
+      </div>
     </header>
     <main>
-      <section>
-        <h2>Entries</h2>
-        <ul>
+      <section class="entry-section">
+        <header class="section-heading">
+          <h2>Entries</h2>
+          <p>Brief glimpses into the rhythms of research, self-reflection, and discovery.</p>
+        </header>
+        <ul class="entry-list">
           <li>
-            <a href="entries/2023-10-01-another-beginning.html">2023-10-01 – Another beginning</a>
+            <a class="entry-card" href="entries/2023-10-01-another-beginning.html">
+              <span class="entry-card__date">Oct 1, 2023</span>
+              <span class="entry-card__title">Another beginning</span>
+            </a>
           </li>
           <li>
-            <a href="entries/entry-template.html">Entry template</a>
+            <a class="entry-card entry-card--ghost" href="entries/entry-template.html">
+              <span class="entry-card__date">Template</span>
+              <span class="entry-card__title">Start a new reflection</span>
+            </a>
           </li>
         </ul>
       </section>
